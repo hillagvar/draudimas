@@ -1,0 +1,58 @@
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header">
+            Pridėti naują savininką
+        </div>
+        <div class="card-body">
+            <form [formGroup]="ownerForm" (ngSubmit)="onSubmit()">
+                <div class="mb-3 row">
+                    <label for="" class="col-sm-3 col-form-label text-end">Vardas:</label>
+                    <div class="col-sm-9">
+                        <input class="form-control" formControlName="name">
+
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="" class="col-sm-3 col-form-label text-end">Pavardė:</label>
+                    <div class="col-sm-9">
+                        <input class="form-control" formControlName="surname">
+
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <label for="" class="col-sm-3 col-form-label text-end">Telefonas:</label>
+                    <div class="col-sm-9">
+                        <input class="form-control" formControlName="phone">
+
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <label for="" class="col-sm-3 col-form-label text-end">El.paštas:</label>
+                    <div class="col-sm-9">
+                        <input class="form-control" formControlName="email">
+
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <label for="" class="col-sm-3 col-form-label text-end">Adresas:</label>
+                    <div class="col-sm-9">
+                        <input class="form-control" formControlName="address">
+
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <div class="col-sm-3 offset-sm-3">
+                        <button class="btn btn-success">Pridėti</button>
+                    </div>
+                </div>
+
+            </form>
+
+
+        </div>
+    </div>
+
+</div>
