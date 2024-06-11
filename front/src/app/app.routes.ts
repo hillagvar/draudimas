@@ -1,7 +1,12 @@
 import { Routes } from '@angular/router';
-import { OwnerComponent } from './components/owner/owner.component';
+import { NewOwnerComponent } from './components/new-owner/new-owner.component';
+import { OwnerListComponent } from './components/owner-list/owner-list.component';
 
 export const routes: Routes = [
-    {path: "owners/add", component: OwnerComponent}
+    
+    {path: "owners/add", component: NewOwnerComponent},
+    {path: "owners", component: OwnerListComponent},
+    
+
 
 ];

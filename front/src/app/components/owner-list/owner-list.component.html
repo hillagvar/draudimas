@@ -1,0 +1,31 @@
+<div class="card mt-4">
+    <div class="card-header">Savininkų sąrašas</div>
+    <div class="card-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Vardas</th>
+                    <th>Pavardė</th>
+                    <th>Telefonas</th>
+                    <th>El.paštas</th>
+                    <th>Adresas</th>
+                    <th class="table-veiksmai">Veiksmai</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let owner of owners; let i = index">
+                    <td>{{i+1}}</td>
+                    <td>{{owner.name}}</td>
+                    <td>{{owner.surname}}</td>
+                    <td>{{owner.email}}</td>
+                    <td>{{owner.address}}</td>
+                    <td class="d-flex justify-content-between">
+
+                        <!-- <a class="btn btn-success mr-3" [routerLink]="['/edit', owner.id]">Redaguoti</a>
+                        <button class="btn btn-danger" (click)="deleteRecord(owner.id)">Ištrinti</button> -->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

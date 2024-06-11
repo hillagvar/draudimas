@@ -1,17 +1,16 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { OwnerService } from '../../services/owner.service';
-import { Owner } from '../../models/owner';
+import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-owner',
+  selector: 'app-new-owner',
   standalone: true,
   imports: [ReactiveFormsModule, CommonModule],
-  templateUrl: './owner.component.html',
-  styleUrl: './owner.component.css'
+  templateUrl: './new-owner.component.html',
+  styleUrl: './new-owner.component.css'
 })
-export class OwnerComponent {
+export class NewOwnerComponent {
 
   public ownerForm: FormGroup;
 
@@ -32,7 +31,5 @@ export class OwnerComponent {
       console.log('prisidejo, lets hope');
     });
   }
-
-
 
 }
